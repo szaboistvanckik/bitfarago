@@ -1,3 +1,7 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -17,10 +21,16 @@
     text-align: center;
 }
 
-.card img {
+.card p {
+    font-size: 2rem;
+}
+
+img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    margin: auto;
+    display: block;
 }
 
 h1 {
