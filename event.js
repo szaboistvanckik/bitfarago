@@ -28,6 +28,6 @@ function show(button) {
       "Be van rosszulva tisztára"
     ];
 
-    intro.innerText = intros[index] || "Bemutatkozás nem elérhető.";
+    intro.innerText = intros[index];
     intro.classList.add('show');
 }
