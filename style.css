@@ -37,3 +37,14 @@ h1 {
     text-align: center;
     margin-bottom: 20px;
 }
+
+#txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 3em;
+    background-color: purple;
+    border-radius: 0.5em;
+    color: white;
+}
