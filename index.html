@@ -10,73 +10,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
-<body onload="startTime()">
-    <nav class="navbar sticky-top navbar-dark bg-dark">
+<body>
+    <!-- <nav class="navbar sticky-top navbar-dark bg-dark">
         <form class="container-fluid justify-content-start">
-            <a class="navbar-brand" href="#">Home</a>
-            <a class="navbar-brand" href="todo.html">TODO</a>
+            <a class="navbar-brand" href="bemutatkozas.html">1. feladat</a>
+            <a class="navbar-brand" href="todo.html">2. feladat</a>
+            <div id="clock"></div>
         </form>
-    </nav>
+    </nav> -->
 
-    <div id="box">
+    <div id="box" class="container">
         <h1>Evo baby dragon</h1>
     </div>
     
     <div class="container-fluid">
         <div class="wrapper container">
-            <div id="clock"></div>
             
             <div class="row">
-                <h2>Versenyzők:</h2>
+                <h2>Feladatok:</h2>
 
                 <div class="card">
-                    <img src="./images/SZI.png" class="img-fluid" alt="Király Olivér portré">
-                    <p>Király Olivér</p>
-                    <input type="button" class="btn btn-dark" onclick="show(this)" value="Bemutatkozás">
-                    <div>
-                        <p class="hidden"></p>
-                    </div>
+                    <a href="bemutatkozas.html" class="my-auto">1. feladat</a>
                 </div>
 
                 <div class="card">
-                    <img src="./images/SZI.png" class="img-fluid" alt="Szabó István portré">
-                    <p>Szabó István</p>
-                    <input type="button" class="btn btn-dark" onclick="show(this)" value="Bemutatkozás">
-                    <div>
-                        <p class="hidden"></p>
-                    </div>
+                    <a href="todo.html" class="my-auto">2. feladat</a>
                 </div>
-                
-                <div class="card">
-                    <img src="./images/SZI.png" class="img-fluid" alt="Homoki Márk portré">
-                    <p>Homoki Márk</p>
-                    <input type="button" class="btn btn-dark" onclick="show(this)" value="Bemutatkozás">
-                    <div>
-                        <p class="hidden"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <h2>Tanárok:</h2>
-                <div class="card">
-                    <img src="./images/" class="img-fluid" alt="Szabó Emánuel portré">
-                    <p>Szabó Emánuel</p>
-                </div>
-
-                <div class="card">
-                    <img src="./images/" class="img-fluid" alt="Farkas Norbert Levente portré">
-                    <p>Farkas Norbert Levente</p>
-                </div>
-            </div>
-
-            <div class="image-container">
-                <img src="./images/SZI.png" alt="Tájkép">
-                <img src="./images/taj1.jpg" alt="Tájkép">
-                <img src="./images/taj2.jpg" alt="Tájkép">
-            </div>
-            
-            <button id="image-toggle-btn" class="btn btn-dark">Kép mutatása</button>
         </div>
     </div>
 </body>

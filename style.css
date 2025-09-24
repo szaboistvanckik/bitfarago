@@ -53,6 +53,10 @@ body::before {
     background-color: rgba(24, 40, 60, 0.12);
 }
 
+body > div:last-of-type {
+    margin-bottom: 40px;
+}
+
 .container > div {
     display: flex;
     justify-content: space-around;
@@ -90,7 +94,7 @@ body::before {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card p {
+.card p, a {
     font-size: 2rem;
     color: #0b1b2b;
 }
@@ -139,9 +143,12 @@ body h2 {
 }
 
 #clock {
-    font-size: 3em;
+    font-size: 1em;
     margin: 0 0 1em 0;
     text-align: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     border-radius: 0.5em;
     color: #0b1b2b;
     padding: 0.3em 0.7em;
@@ -160,8 +167,16 @@ body h2 {
 }
 
 @media (max-width: 600px) {
+    .wrapper  {
+        width: 100% !important;
+    }
     .card {
         max-width: 90%;
+    }
+    #box {
+        max-width: none !important;
+        margin-right: calc(var(--bs-gutter-x) * .5);
+        margin-left: calc(var(--bs-gutter-x) * .5);
     }
 }
 
