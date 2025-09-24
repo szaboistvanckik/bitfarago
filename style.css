@@ -164,3 +164,63 @@ body h2 {
         max-width: 90%;
     }
 }
+
+.image-container {
+    height: 40em;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; 
+}
+
+#todo-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#new-task {
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+}
+
+#add-task {
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+}
+
+li.task-item {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+li.task-item.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
