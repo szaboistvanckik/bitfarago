@@ -43,6 +43,13 @@ function show(button) {
       "Be van rosszulva tisztára"
     ];
 
-    intro.innerText = intros[index];
-    intro.classList.add('show');
+    if (intro.classList.contains('show')) {
+        intro.innerText = "";
+        intro.classList.remove('show');
+        button.value = "Bemutatkozás";
+    } else {
+        intro.innerText = intros[index];
+        intro.classList.add('show');
+        button.value = "Bemutatkozás elrejtése";
+    }
 }

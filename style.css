@@ -19,7 +19,7 @@ body::before {
     background-image: url("./images/bg.png");
     background-size: contain;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat:repeat;
     z-index: -1;
     pointer-events: none;
 }
