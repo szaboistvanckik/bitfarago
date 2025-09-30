@@ -2,18 +2,10 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
-body {
-    position: relative;
-    margin: 0;
-    min-height: 100vh;
-}
-
 body::before {
     background-color: rgba(14, 18, 28, 0.95);
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-image: url("./images/bg.png");
@@ -21,18 +13,11 @@ body::before {
     background-position: center;
     background-repeat: repeat;
     z-index: -1;
-    pointer-events: none;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .wrapper {
-    width: 85% !important;
-    max-width: none !important;
+    width: 85%;
+    max-width: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,16 +25,12 @@ body::before {
     padding: 40px;
     border-radius: 15px;
     background: #BDB7D9;
-    box-shadow: 0 6px 18px rgba(189,183,217,0.25), 0 0 6px rgba(178,183,217,0.12);
     color: #E6E6F0;
+    box-shadow: 0 6px 18px rgba(189,183,217,0.25), 0 0 6px rgba(178,183,217,0.12);
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .container .row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
     background-color: rgba(24, 40, 60, 0.12);
 }
 
@@ -58,8 +39,6 @@ body > div:last-of-type {
 }
 
 .container > div {
-    display: flex;
-    justify-content: space-around;
     gap: 20px;
     padding: 40px;
     border-radius: 15px;
@@ -76,12 +55,11 @@ body > div:last-of-type {
 
 .show {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
 }
 
 .card {
     flex: 1 1 300px;
-    max-width: 300px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -120,10 +98,11 @@ body > div:last-of-type {
 
 img {
     max-width: 100%;
-    height: auto;
     border-radius: 8px;
+}
+
+.tanarok img {
     margin: auto;
-    display: block;
 }
 
 body h1 {
@@ -185,20 +164,6 @@ body h2 {
     font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 750;
     letter-spacing: 0.21em;
-}
-
-@media (max-width: 600px) {
-    .wrapper  {
-        width: 100% !important;
-    }
-    .card {
-        max-width: 90%;
-    }
-    #box {
-        max-width: none !important;
-        margin-right: calc(var(--bs-gutter-x) * .5);
-        margin-left: calc(var(--bs-gutter-x) * .5);
-    }
 }
 
 .image-container {
@@ -279,4 +244,18 @@ li.task-item.completed {
     border-color: lightgray;
     background-color: rgba(24, 40, 60, 0.12);
     color: white
+}
+
+@media (max-width: 600px) {
+    .wrapper  {
+        width: 100%;
+    }
+    .card {
+        max-width: 90%;
+    }
+    #box {
+        max-width: none;
+        margin-right: calc(var(--bs-gutter-x) * .5);
+        margin-left: calc(var(--bs-gutter-x) * .5);
+    }
 }
