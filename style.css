@@ -3,6 +3,7 @@
 }
 
 body::before {
+    top: 0;
     background-color: rgba(14, 18, 28, 0.95);
     content: "";
     position: fixed;
