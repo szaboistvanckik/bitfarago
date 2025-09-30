@@ -49,11 +49,14 @@ body > div:last-of-type {
 }
 
 .hidden {
+    margin: 0.5em;
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-    font-size: 1.5em !important;
-    margin: 0.5em;
+}
+
+.card p.hidden {
+    font-size: 1.5em;
 }
 
 .show {
@@ -70,10 +73,30 @@ body > div:last-of-type {
     align-items: center;
     padding: 15px;
     text-align: center;
-    background: #f7fbff;
     box-shadow: 0 6px 12px rgba(8,12,20,0.12);
     transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%;
 }
+
+nav a {
+    padding: 4px 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background-color: #333;
+}
+
+nav a.selected {
+    background-color: #888;
+}
+
+nav a:not(.selected):hover, nav a:hover {
+    transform: translateY(-1px);
+    background-color: #777;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 
 .card a {
     color: #7c3aed;
@@ -100,11 +123,16 @@ body > div:last-of-type {
 .card:nth-of-type(3) { background: #C1B8DD; }
 
 img {
-    max-width: 100%;
     border-radius: 8px;
 }
 
-.tanarok img {
+.row:first-of-type .card img {
+    width: 500px;
+}
+
+div.tanarok img {
+    object-fit: cover;
+    height: 100%;
     margin: auto;
 }
 
@@ -169,16 +197,12 @@ body h2 {
     letter-spacing: 0.21em;
 }
 
-.image-container {
-    height: 40em;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
 .image-container img {
-    width: 100%;
-    height: 100%;
+    border: 1px solid #ccc;
+    width: 65em;
     object-fit: cover;
-    display: none; 
+    height: 100%;
+    margin: auto;
 }
 
 #todo-form {
@@ -196,6 +220,10 @@ body h2 {
     color: white;
 }
 
+#image-toggle-btn {
+    margin-bottom: 20px;
+}
+
 #add-task {
     padding: 0.5rem 1rem;
     margin-left: 0.5rem;
@@ -211,9 +239,7 @@ body h2 {
 }
 
 ul#task-list {
-    list-style-type: none;
     padding: 0;
-    max-width: 400px;
     margin: auto;
 }
 
@@ -228,7 +254,11 @@ li.task-item {
     cursor: grab;
     border-radius: 12px;
     background-color: rgba(24, 40, 60, 0.12);
-    color: white
+    color: white;
+}
+
+li.task-item span {
+    word-break: break-all;
 }
 
 li.task-item.completed {
@@ -244,6 +274,7 @@ li.task-item.completed {
 .task-buttons button {
     border-radius: 12px;
     border-color: lightgray;
+    margin: 0.5em;
     background-color: rgba(24, 40, 60, 0.12);
     color: white
 }
@@ -251,13 +282,30 @@ li.task-item.completed {
 @media (max-width: 600px) {
     .wrapper  {
         width: 100%;
-    }
-    .card {
-        max-width: 90%;
+        padding: 5px;
     }
     #box {
-        max-width: none;
-        margin-right: calc(var(--bs-gutter-x) * .5);
-        margin-left: calc(var(--bs-gutter-x) * .5);
+        width: 95%;
+    }
+    .task-buttons {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card p.hidden {
+        font-size: 15px;
+    }
+    nav form a.navbar-brand {
+        font-size: 14px;
+    }
+    #new-task {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .card img {
+        max-width: 1000px;
     }
 }

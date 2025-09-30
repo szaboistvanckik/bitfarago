@@ -13,7 +13,7 @@
 <body onload="startTime()">
     <nav class="navbar sticky-top navbar-dark bg-dark">
         <form class="container-fluid justify-content-start">
-            <a class="navbar-brand" href="#">1. feladat</a>
+            <a class="navbar-brand selected" href="#">1. feladat</a>
             <a class="navbar-brand" href="todo.html">2. feladat</a>
             <div id="clock"></div>
         </form>
@@ -26,7 +26,7 @@
     <div class="container-fluid">
         <div class="wrapper container">
             
-            <div class="row">
+            <div class="row tanulok">
                 <h2>Versenyzők:</h2>
 
                 <div class="card">
@@ -78,13 +78,14 @@
                 </div>
             </div>
 
-            <div id="imgholder" class="row d-none">
-                <div class="image-container">
-                    <img src="./images/SZI.png" alt="Tájkép">
-                    <img src="./images/taj1.jpg" alt="Tájkép">
-                    <img src="./images/taj2.jpg" alt="Tájkép">
+                <div id="imgholder" class="row d-none">
+                    <h2>Tájképek:</h2>
+                    <div class="image-container card">
+                        <img src="./images/taj1.jpg" class="img-fluid" alt="Tájkép">
+                        <img src="./images/taj2.jpeg" class="img-fluid" alt="Tájkép">
+                        <img src="./images/taj3.jpg" class="img-fluid" alt="Tájkép">
+                    </div>
                 </div>
-            </div>
             
             <button id="image-toggle-btn" class="btn btn-dark">Kép mutatása</button>
         </div>
