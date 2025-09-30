@@ -38,7 +38,7 @@ function show(button) {
     const index = Array.from(cards).indexOf(card);
 
     const intros = [
-      "Tiszta rosszul vagyok",
+      "Király Olivér vagyok. Kedvenc sportom a foci. A szabadidőmben legszívesebben videójátékokkal játszom, vagy sorozatokat/filmeket nézek.",
       "Tiszta gyagyás itt minden",
       "Be van rosszulva tisztára"
     ];

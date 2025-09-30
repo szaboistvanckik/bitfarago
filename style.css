@@ -3,6 +3,7 @@
 }
 
 body::before {
+    top: 0;
     background-color: rgba(14, 18, 28, 0.95);
     content: "";
     position: fixed;
@@ -51,6 +52,8 @@ body > div:last-of-type {
     opacity: 0;
     transform: translateY(10px);
     transition: opacity 0.5s ease, transform 0.5s ease;
+    font-size: 1.5em !important;
+    margin: 0.5em;
 }
 
 .show {
