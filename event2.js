@@ -14,9 +14,12 @@ function checkTime(i) {
     return i;
 }
 
+const div = document.querySelector(".wrapper")
 const taskList = document.getElementById('task-list');
 const newTaskInput = document.getElementById('new-task');
 const addTaskButton = document.getElementById('add-task');
+
+div.appendChild(taskList)
 
 let draggedItem = null;
 
