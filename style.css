@@ -19,7 +19,7 @@ body::before {
     background-image: url("./images/bg.png");
     background-size: contain;
     background-position: center;
-    background-repeat:repeat;
+    background-repeat: repeat;
     z-index: -1;
     pointer-events: none;
 }
@@ -94,6 +94,16 @@ body > div:last-of-type {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.card a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.card a:hover {
+    color: #5e08f3;
+}
+
 .card p, a {
     font-size: 2rem;
     color: #0b1b2b;
@@ -129,6 +139,17 @@ body h1 {
 
 body h2 {
     color: #0b1b2b;
+}
+
+#index-h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0b1b2b;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.25);
+    font-family: 'Poppins', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.15em;
 }
 
 #box {
@@ -202,6 +223,9 @@ body h2 {
     padding: 0.5rem;
     width: 300px;
     font-size: 1rem;
+    border-radius: 12px;
+    background-color: rgba(24, 40, 60, 0.12);
+    color: white;
 }
 
 #add-task {
@@ -209,6 +233,13 @@ body h2 {
     margin-left: 0.5rem;
     font-size: 1rem;
     cursor: pointer;
+    border-radius: 12px;
+    background-color: rgba(24, 40, 60, 0.12);
+    color: white;
+}
+
+#new-task::placeholder {
+    color: white;
 }
 
 ul#task-list {
@@ -228,14 +259,24 @@ li.task-item {
     border: 1px solid #ccc;
     border-radius: 4px;
     cursor: grab;
+    border-radius: 12px;
+    background-color: rgba(24, 40, 60, 0.12);
+    color: white
 }
 
-li.task-item.completed span {
-    text-decoration: line-through;
-    color: gray;
+li.task-item.completed {
+    background-color: #4CAF50;
+    color: white;
 }
 
 .task-buttons {
     display: flex;
     gap: 0.5rem;
+}
+
+.task-buttons button {
+    border-radius: 12px;
+    border-color: lightgray;
+    background-color: rgba(24, 40, 60, 0.12);
+    color: white
 }
