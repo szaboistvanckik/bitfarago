@@ -40,7 +40,7 @@ function show(button) {
     const intros = [
       "Király Olivér vagyok. Kedvenc sportom a foci. A szabadidőmben legszívesebben videójátékokkal játszom, vagy sorozatokat/filmeket nézek.",
       "Pisti vagyok! 18 éves.. szeretem az osut, a valorantot és az osztálytársaimat! Peakem Immortal 3, 670rr. Magyarország #4 legjobb osu játékosa!",
-      "Be van rosszulva tisztára"
+      "Marki vagyok 18 éves szeretek járni kondiba, szabadidőmbe általaban alszok"
     ];
 
     if (intro.classList.contains('show')) {
